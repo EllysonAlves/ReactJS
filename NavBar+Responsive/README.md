@@ -1,3 +1,5 @@
+![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://i.imgur.com/8HsnpUS.gif))
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
