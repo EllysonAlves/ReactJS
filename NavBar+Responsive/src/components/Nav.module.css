@@ -1,0 +1,138 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:Arial, FontAwesome;
+}
+.Nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.Img{
+    width: 100px;
+}
+
+.Nav input{
+    width: 80%;
+    height: 40px;
+    border-radius: 40px;
+    border: 0px;
+    padding: 10px;
+    background-color: #00000031;
+}
+.Txt{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.Txt a{
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #1c5f86;
+    font-size: small;
+    background-color: #b6b6b67c;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Txt a:hover, .Box a:hover{
+    background-color: #0000009d;
+    color: #fff;
+}
+
+.TxtNav{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.navegacao{
+    display: none;
+    align-items: center;
+}
+.navegacao ul{
+    padding: 0;
+    width: 500px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navegacao ul li{
+    color: white;
+    width: 100%;
+}
+.navegacao ul a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Mobile layout */
+
+@media (max-width:500px){
+
+    .Txt{
+        display: none;
+    }
+    .navegacao ul{
+        display: none;
+        position: absolute;
+        width: 200px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.212);
+        right: 0px;
+        top: 40px;
+        transition: 0.5s;
+    }
+    .navegacao:hover ul{
+        display: block;
+    }
+    .navegacao ul a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+    }
+    .navegacao{
+        display: flex;
+        position: relative;
+    }
+    .linhas{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 5px;
+    }
+  
+    .linhas .linha1 , .linha2 , .linha3{
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        transition: 0.5s;
+    }
+  
+    .linhas:hover .linha2{
+        opacity: 0;
+    }
+    .linhas:hover .linha1{
+        transform: rotate(45deg)
+        translate(0,14px);
+        background-color: #ff0000;
+    }
+    .linhas:hover .linha3{
+        transform: rotate(-45deg)
+        translate(0,-14px);
+        background-color: #ff0000;
+    }
+}

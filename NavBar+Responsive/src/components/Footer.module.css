@@ -1,0 +1,17 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:Arial, FontAwesome;
+}
+footer{
+    width: 100%;
+    height: calc(100vh - 100px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+footer p{
+    font-size: small;
+}
